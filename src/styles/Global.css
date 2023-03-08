@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  overflow-x: hidden;
+}
+
+.swal2-popup {
+  font-family: 'Teko', sans-serif;
+}
+.docs{
+  color: red;
+}
+#load {
+    list-style: none;
+  }
+  #load::before{
+    position: absolute;
+    content: "•";
+    color: red;
+   display: inline-block;
+    width: 1rem;
+    margin-left: -1em;
+  }
+  #done {
+    list-style: none;
+  }
+  #done::before{
+    position: absolute;
+    content: "•";
+    color: rgb(32, 177, 32);
+   display: inline-block;
+    width: 1rem;
+    margin-left: -1em;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 1;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: aqua;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    width: 45px;
+
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: 1s ease-in;
+  }
+
+  #myBtn:hover{
+    filter: opacity(0.8);
+    opacity: 0.2s ease 0s;
+    transform: translateY(-10px);
+    transition: 1s ease-in;
+  }
